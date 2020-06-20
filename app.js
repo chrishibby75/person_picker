@@ -24,7 +24,10 @@ $("#random-button").on("click", function() {
 
 
     if (members.length === 0) {
-        $("#name-field").html("<h3>All team members have been selected.</h3>");
+        $("#title").html("<h1>All team members have been selected</h1>");
+        $("#name-field").html("");
         $("#img-div").html("");
+    } else {
+        $("#title").html("<h1>Choose The Next Team Member</h1>")
     }
 });
