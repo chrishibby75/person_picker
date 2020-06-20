@@ -15,10 +15,16 @@ body {
 }
 
 #img-field {
-    height: 450px;
-    width: 750px;
+    height: 30rem;
+    width: 48rem;
 }
 
 #img-div {
     background: rgb(118, 184, 175);
 }
+
+/* @media screen and (max-width: 768px) {
+    #img-field {
+        height: ;
+    }
+} */
