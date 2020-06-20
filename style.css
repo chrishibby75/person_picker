@@ -13,3 +13,12 @@ body {
 #random-button:hover {
     background: grey;
 }
+
+#img-field {
+    height: 450px;
+    width: 750px;
+}
+
+#img-div {
+    background: rgb(118, 184, 175);
+}
