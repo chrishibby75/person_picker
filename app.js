@@ -2,7 +2,7 @@ function Member (name, src) {
     this.name = name;
     this.src = src;
 }
-var shawntell = new Member("Shawntell Maez", "images/shawncy.jpg");
+var shawntell = new Member("Shawntell Sanchez", "images/shawncy.jpg");
 var matt = new Member("Matt Palmer", "images/matt.jpg");
 var jordan = new Member("Jordan Parr", "images/jordan.jpg");
 var chris = new Member("Chris Hibberd", "images/chris.jpg");
