@@ -15,9 +15,16 @@ var brice = new Member("Brice Gibson", "brice.jpg");
 var members = [shawntell, matt, jordan, chris, david, jenn, cutler, ashley, brice]
 
 $("#random-button").on("click", function() {
-    var randomMember = members[Math.floor(Math.random() * members.length)];
+    var randomMemberIndex = [Math.floor(Math.random() * members.length)];
     // console.log(randomMember.name);
 
-    $("#name-field").html("<h1>" + randomMember.name + "</h1>");
-    $("#img-div").html("<img id='img-field' src='images/" + randomMember.src + "'>");
+    $("#name-field").html("<h1>" + members[randomMemberIndex].name + "</h1>");
+    $("#img-div").html("<img id='img-field' src='images/" + members[randomMemberIndex].src + "'>");
+    members.splice(randomMemberIndex, 1);
+
+
+    if (members.length === 0) {
+        $("#name-field").html("<h3>All team members have been selected.</h3>");
+        $("#img-div").html("");
+    }
 });
