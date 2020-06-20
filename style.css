@@ -1,0 +1,15 @@
+body {
+    background: rgb(118, 184, 175);
+}
+
+.header {
+    padding: 25px;
+}
+
+.randomizer {
+    padding: 25px;
+}
+
+#random-button:hover {
+    background: grey;
+}
