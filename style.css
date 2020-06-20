@@ -23,8 +23,9 @@ body {
     background: rgb(118, 184, 175);
 }
 
-/* @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     #img-field {
-        height: ;
+        height: 17rem;
+        width: 25rem;
     }
-} */
+}
