@@ -6,8 +6,18 @@ body {
     padding: 25px;
 }
 
+#name-field, #title {
+    color: rgb(238, 237, 237);
+}
+
 .randomizer {
     padding: 25px;
+}
+
+#random-button {
+    box-shadow: 4px 9px rgb(196, 195, 195);
+    border-radius: 15px;
+    background: darkgray;
 }
 
 #random-button:hover {
@@ -17,6 +27,11 @@ body {
 #img-field {
     height: 30rem;
     width: 48rem;
+}
+
+.pressed {
+    box-shadow: 0 4px rgb(196, 195, 195) !important;
+    transform: translateY(4px);
 }
 
 @media screen and (max-width: 768px) {

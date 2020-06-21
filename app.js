@@ -30,4 +30,15 @@ $("#random-button").on("click", function() {
     } else {
         $("#title").html("<h1>Choose The Next Team Member</h1>")
     }
+
+    animatePress();
 });
+
+function animatePress() {
+
+    $("#random-button").addClass("pressed");
+  
+    setTimeout(function () {
+      $("#random-button").removeClass("pressed");
+    }, 150);
+  };
