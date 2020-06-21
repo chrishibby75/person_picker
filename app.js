@@ -50,5 +50,5 @@ function animatePress() {
   
     setTimeout(function () {
       $("#random-button").removeClass("pressed");
-    }, 100);
+    }, 150);
   };
