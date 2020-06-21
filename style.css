@@ -7,7 +7,7 @@ body {
 }
 
 #name-field, #title {
-    color: rgb(238, 237, 237);
+    color: whitesmoke;
 }
 
 .randomizer {
@@ -31,7 +31,7 @@ body {
 
 .pressed {
     box-shadow: 0 4px rgb(196, 195, 195) !important;
-    transform: translateY(4px);
+    transform: translateY(7px);
 }
 
 @media screen and (max-width: 768px) {
