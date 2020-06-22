@@ -57,4 +57,8 @@ function animatePress() {
       $(document).keypress(function() {
         location.reload();        
       });
+      $(document).on("mousedown", function() {
+          location.reload();
+      })
   }
+  
