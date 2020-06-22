@@ -32,15 +32,14 @@ $("#random-button").on("click", function() {
     // removes chosen item from array so it doesn't get picked again
     members.splice(randomMemberIndex, 1);
 
-
     if (members.length === 0) {
         $("#title").html("<h1>All team members have been selected</h1>");
-        $("#name-field").html("refresh page to start over");
+        $("#name-field").html("press any key to begin again");
         $("#img-div").html("");
+        startOver();
     } else {
         $("#title").html("<h1>Choose The Next Team Member</h1>")
     }
-
 });
 
 // button animation
@@ -52,3 +51,10 @@ function animatePress() {
       $("#random-button").removeClass("pressed");
     }, 150);
   };
+
+  // press any key to refresh the page once array is empty
+  function startOver() {
+      $(document).keypress(function() {
+        location.reload();        
+      });
+  }
