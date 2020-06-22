@@ -23,8 +23,7 @@ $("#random-button").on("click", function() {
     animatePress();
 
     // creates index for the members array
-    var randomMemberIndex = [Math.floor(Math.random() * members.length)];
-    
+    var randomMemberIndex = [Math.floor(Math.random() * members.length)];    
     
         if (members.length > 0) {
             // renders member values to dom
@@ -39,7 +38,6 @@ $("#random-button").on("click", function() {
             $("#img-div").html("");
             startOver();
     }
-
 });
 
 // button animation
@@ -59,6 +57,6 @@ function animatePress() {
       });
       $(document).on("mousedown", function() {
           location.reload();
-      })
+      });
   }
   
