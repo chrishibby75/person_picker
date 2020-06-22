@@ -16,7 +16,7 @@ var ashley = new Member("Ashley Dawson", "ashley.jpg");
 var brice = new Member("Brice Gibson", "brice.jpg");
 
 // put all instances into an array
-var members = [shawntell, matt, jordan, chris, david, jenn, cutler, ashley, brice]
+var members = [shawntell, matt, jordan, chris, david, jenn, cutler, ashley, brice];
 
 // event listener that causes the button click to start things
 $("#random-button").on("click", function() {
