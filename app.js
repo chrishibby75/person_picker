@@ -24,22 +24,22 @@ $("#random-button").on("click", function() {
 
     // creates index for the members array
     var randomMemberIndex = [Math.floor(Math.random() * members.length)];
-
-    // renders member values to dom
-    $("#name-field").html("<h1>" + members[randomMemberIndex].name + "</h1>");
-    $("#img-div").html("<img id='img-field' src='images/" + members[randomMemberIndex].src + "'>");
-
-    // removes chosen item from array so it doesn't get picked again
-    members.splice(randomMemberIndex, 1);
-
-    if (members.length === 0) {
-        $("#title").html("<h1>All team members have been selected</h1>");
-        $("#name-field").html("press any key to begin again");
-        $("#img-div").html("");
-        startOver();
-    } else {
-        $("#title").html("<h1>Choose The Next Team Member</h1>")
+    
+    
+        if (members.length > 0) {
+            // renders member values to dom
+            $("#title").html("<h1>Choose The Next Team Member</h1>");
+            $("#name-field").html("<h1>" + members[randomMemberIndex].name + "</h1>");
+            $("#img-div").html("<img id='img-field' src='images/" + members[randomMemberIndex].src + "'>");
+            // removes chosen item from array so it doesn't get picked again
+            members.splice(randomMemberIndex, 1);
+        } else {
+            $("#title").html("<h1>All Team Members Have Been Selected</h1>");
+            $("#name-field").html("press any key to begin again");
+            $("#img-div").html("");
+            startOver();
     }
+
 });
 
 // button animation
