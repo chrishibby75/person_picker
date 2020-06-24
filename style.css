@@ -1,5 +1,6 @@
 body {
     background: rgb(118, 184, 175);
+    position: sticky;
 }
 
 .header {
@@ -40,4 +41,12 @@ body {
         height: 17rem;
         width: 25rem;
     }
+}
+
+@media screen and (max-height: 610px) {
+    #img-field {
+        height: 21.5rem;
+        width: 38rem;
+    }
+    
 }
