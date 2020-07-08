@@ -5,25 +5,25 @@ function Member (name, src) {
 }
 
 // instances from constructor
-var shawntell = new Member("Shawntell Sanchez", "shawncy.jpg");
-var matt = new Member("Matt Palmer", "matt.jpg");
-var jordan = new Member("Jordan Parr", "jordan.jpg");
-var chris = new Member("Chris Hibberd", "chris.jpg");
-var david = new Member("David Orme", "david.jpg");
-var jenn = new Member("Jenn Pickett", "jenn.jpg");
-var cutler = new Member("Cutler Christensen", "cutler.jpg");
-var ashley = new Member("Ashley Dawson", "ashley.jpg");
-var brice = new Member("Brice Gibson", "brice.jpg");
+const shawntell = new Member("Shawntell Sanchez", "shawncy.jpg");
+const matt = new Member("Matt Palmer", "matt.jpg");
+const jordan = new Member("Jordan Parr", "jordan.jpg");
+const chris = new Member("Chris Hibberd", "chris.jpg");
+const david = new Member("David Orme", "david.jpg");
+const jenn = new Member("Jenn Pickett", "jenn.jpg");
+const cutler = new Member("Cutler Christensen", "cutler.jpg");
+const ashley = new Member("Ashley Dawson", "ashley.jpg");
+const brice = new Member("Brice Gibson", "brice.jpg");
 
 // put all instances into an array
-var members = [shawntell, matt, jordan, chris, david, jenn, cutler, ashley, brice];
+const members = [shawntell, matt, jordan, chris, david, jenn, cutler, ashley, brice];
 
 // event listener that causes the button click to start things
 $("#random-button").on("click", function() {
     animatePress();
 
     // creates index for the members array
-    var randomMemberIndex = [Math.floor(Math.random() * members.length)];    
+    let randomMemberIndex = [Math.floor(Math.random() * members.length)];    
     
         if (members.length > 0) {
             // renders member values to dom
