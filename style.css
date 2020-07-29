@@ -3,6 +3,10 @@ body {
     position: sticky;
 }
 
+h1 {
+    font-family: "Cabin", sans-serif;
+}
+
 .header {
     padding: 25px;
 }
