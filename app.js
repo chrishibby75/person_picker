@@ -9,14 +9,13 @@ const shawntell = new Member("Shawntell Sanchez", "shawncy.jpg");
 const matt = new Member("Matt Palmer", "matt.jpg");
 const jordan = new Member("Jordan Parr", "jordan.jpg");
 const chris = new Member("Chris Hibberd", "chris.jpg");
-const david = new Member("David Orme", "david.jpg");
 const jenn = new Member("Jenn Pickett", "jenn.jpg");
 const cutler = new Member("Cutler Christensen", "cutler.jpg");
 const ashley = new Member("Ashley Dawson", "ashley.jpg");
 const brice = new Member("Brice Gibson", "brice.jpg");
 
 // put all instances into an array
-const members = [shawntell, matt, jordan, chris, david, jenn, cutler, ashley, brice];
+const members = [shawntell, matt, jordan, chris, jenn, cutler, ashley, brice];
 
 // event listener that causes the button click to start things
 $("#random-button").on("click", function() {
