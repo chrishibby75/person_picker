@@ -16,7 +16,7 @@ const brice = new Member("Bricey Poo", "brice.jpg");
 const gil = new Member("Gil Frederickson", "gil.jpg");
 
 // put all instances into an array
-const members = [shawntell, matt, jordan, chris, jenn, cutler, ashley, brice];
+const members = [shawntell, matt, jordan, chris, jenn, cutler, ashley, brice, gil];
 
 // event listener that causes the button click to start things
 $("#random-button").on("click", function() {
