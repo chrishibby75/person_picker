@@ -12,7 +12,8 @@ const chris = new Member("Chris Hibberd", "chris.jpg");
 const jenn = new Member("Jenn Pickett", "jenn.jpg");
 const cutler = new Member("Cutler Christensen", "cutler.jpg");
 const ashley = new Member("Ashley Dawson", "ashley.jpg");
-const brice = new Member("Brice Gibson", "brice.jpg");
+const brice = new Member("Bricey Poo", "brice.jpg");
+const gil = new Member("Gil Frederickson", "gil.jpg");
 
 // put all instances into an array
 const members = [shawntell, matt, jordan, chris, jenn, cutler, ashley, brice];
