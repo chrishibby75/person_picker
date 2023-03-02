@@ -33,6 +33,8 @@ h1 {
 #img-field {
     height: 30rem;
     width: 48rem;
+    border: 2px black solid;
+    box-shadow: 0 0 2px 2px;
 }
 
 .pressed {
